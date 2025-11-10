@@ -25,8 +25,8 @@ body{
 .formpanel.is-succeed{
     border-radius: 15px;
     padding: 25px;
-    height: min(90vw, 300);
-    width: min(90vw, 300);
+    height: min(90vw, 300px);
+    width: min(90vw, 300px);
     display: grid;
     background-color: white;
     gap: 15px;
