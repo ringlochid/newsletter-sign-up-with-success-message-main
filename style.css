@@ -1,0 +1,52 @@
+body{
+    display: grid;
+    margin: 0;
+    min-height: 100vh;
+    place-items: center;
+    background-color: rgb(55, 55, 93);
+}
+
+.formpanel{
+    display: none;
+}
+@media (min-width: 400px) {
+    .formpanel.is-open{
+        border-radius: 15px;
+        padding: 10px;
+        display: grid;
+        width: min(90vw, 800px);
+        height: min(59.3vw, 500px);
+        grid-template-columns: 1.5fr min(40vw, 335px);
+        background-color: white;
+        gap: 35px;
+    }
+}
+.sign-up-ill-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.subintro{
+    display: grid;
+    gap: 12px;
+}
+.subintro h1{
+    margin: 0;
+    padding-top: 35px;
+}
+.subintro .introlist{
+    display: grid;
+    grid-template-columns: 16px auto;
+    gap: 16px;
+}
+.subintro .introlist img{
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+.subintro form{
+    display: grid;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+attribution a { color: hsl(228, 45%, 44%); }
