@@ -12,14 +12,16 @@
 </head>
 <body>
 
-  <div class="formpanel is-open">
-    <div class="subintro">  
-      <h1>
+  <div id="sign-in-panel" class="formpanel is-open">
+    <div class="subintro"> 
+      <div>
+        <h1>
         Stay updated!
-      </h1>
-      <p>
-        Join 60,000+ product managers receiving monthly updates on:
-      </p>
+        </h1>
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+      </div> 
       <div class="introlist">
         <div><img src="./assets/images/icon-list.svg" alt="icon-list"></div>
         <div>Product discovery and building what matters</div>
@@ -29,7 +31,13 @@
         <div>And much more!</div>
       </div>
       <div>
-        <label
+        <form id="sign_in_form" action="./">
+          <div>
+            <label for="email"><strong>Email address</strong></label><br>
+            <input id="email" name="email" type="email" placeholder="email@company.com" autocomplete="email" inputmode="email" required/>
+          </div>
+          <button>Subscribe to monthly newsletter</button>
+        </form>
       </div>
     </div>
     <div>
@@ -37,23 +45,22 @@
     </div>
   </div>
 
+  <div id="succeed-panel" class="formpanel is-succeed">
+    <div><img src="./assets/images/icon-success.svg" alt="success" class="successimg"></div>
+    <div>
+      <h1>Thanks for subscribing!</h1>
+      <p>  A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+    <div>
+      <button>Dismiss message</button>
+    </div>
+  </div>
+
   <!-- Sign-up form start -->
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
 
   <!-- Success message end -->
 </body>

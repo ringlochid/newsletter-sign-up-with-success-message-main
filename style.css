@@ -12,7 +12,7 @@ body{
 @media (min-width: 400px) {
     .formpanel.is-open{
         border-radius: 15px;
-        padding: 10px;
+        padding: 25px;
         display: grid;
         width: min(90vw, 800px);
         height: min(59.3vw, 500px);
@@ -21,6 +21,17 @@ body{
         gap: 35px;
     }
 }
+
+.formpanel.is-succeed{
+    border-radius: 15px;
+    padding: 25px;
+    height: min(90vw, 300);
+    width: min(90vw, 300);
+    display: grid;
+    background-color: white;
+    gap: 15px;
+}
+
 .sign-up-ill-img{
     width: 100%;
     height: auto;
@@ -28,24 +39,30 @@ body{
 }
 .subintro{
     display: grid;
-    gap: 12px;
+    grid-template-rows: 150px 90px auto;
 }
 .subintro h1{
     margin: 0;
     padding-top: 35px;
 }
+.subintro h1{
+    margin: 0;
+}
 .subintro .introlist{
     display: grid;
     grid-template-columns: 16px auto;
-    gap: 16px;
 }
 .subintro .introlist img{
     border-radius: 50%;
     height: 16px;
     width: 16px;
 }
-.subintro form{
-    display: grid;
+@media (min-width: 500px){
+    .subintro form{
+        padding-top: 30px;
+        display: grid;
+        gap: 10px;
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
