@@ -51,6 +51,7 @@ body{
 .subintro .introlist{
     display: grid;
     grid-template-columns: 16px auto;
+    column-gap: 10px;
 }
 .subintro .introlist img{
     border-radius: 50%;
