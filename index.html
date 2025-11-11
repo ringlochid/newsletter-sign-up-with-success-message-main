@@ -31,10 +31,15 @@
         <div>And much more!</div>
       </div>
       <div>
-        <form id="sign_in_form" action="./">
+        <form id="sign_in_form" action="./" novalidate>
           <div>
-            <label for="email"><strong>Email address</strong></label><br>
-            <input class="email-box" id="email" name="email" type="email" placeholder="email@company.com" autocomplete="email" inputmode="email" required/>
+            <div class="mail-box-lable">
+              <label for="email"><strong>Email address</strong></label>
+              <span id="mail-error" class="input-error"></span>
+            </div>
+            <input class="email-box" id="email" name="email" type="email" 
+            placeholder="email@company.com" autocomplete="email" 
+            inputmode="email" minlength="5" maxlength="50" required/>
           </div>
           <button type="submit" class="sub-btn">Subscribe to monthly newsletter</button>
         </form>

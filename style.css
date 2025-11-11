@@ -66,11 +66,25 @@ body{
         justify-content: stretch;
     }
 }
+.mail-box-lable{
+    display: flex;
+    align-items: baseline;
+    gap: .75rem;
+}
 .email-box{
     width: 98%;
     height: 40px;
     margin: 0;
     font-size: large;
+}
+.email-box.invalid{
+    border-color: hsl(4 100% 67%);
+    background: hsl(4 100% 67% / .08);
+}
+.input-error{
+    margin-left: auto;
+    font-size:.9rem;
+    color: rgba(165, 42, 42, 0.349);
 }
 .sub-btn{
     margin: 0;
